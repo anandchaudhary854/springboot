@@ -1,8 +1,13 @@
 package com.anandCodes.springboot.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+
 import java.util.UUID;
 
+@Table("transactions")
 public class Transactions {
+    @Id
     private String id;
     private String userId;
     private Integer amount;

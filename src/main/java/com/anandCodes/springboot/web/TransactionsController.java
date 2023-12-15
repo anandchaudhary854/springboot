@@ -22,7 +22,7 @@ public class TransactionsController {
 
     @GetMapping("/transactions")
     public List<Transactions> getAllTransactions(){
-        return transactionService.findAll();
+        return (List<Transactions>) transactionService.findAll();
     }
 
     @PostMapping("/transactions")

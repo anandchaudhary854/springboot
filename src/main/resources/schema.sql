@@ -1,8 +1,8 @@
 create table if not exists transactions
 (
-    id      uuid  default random_uuid() primary key,
-    refrence varchar(255),
-    user_id varchar(255),
-    time_stamp varchar(255),
-    amount  int
+    ID uuid default random_uuid() primary key,
+    REFERENCE varchar(255),
+    USER_ID varchar(255),
+    TIME_STAMP varchar(255),
+    AMOUNT int
 );
